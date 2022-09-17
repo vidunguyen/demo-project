@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    line-height: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.header{
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.nav{
+    list-style: none;
+    
+}
+
+.nav > li {
+    float: left;
+    padding: 12px 20px;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav li:hover{
+    background-color: #f44336;
+}
+.more {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    position: relative;
+}
+
+.nav li:nth-child(5):hover .more-child{
+    display: block;
+}
+
+.more p {
+    padding-right: 4px;
+}
+
+li:last-child{
+    float: right !important;
+    padding: 16px 20px;
+
+}
+
+.search-icon i{
+    color: white;
+    font-size: 90%;
+}
+
+
+.more-child{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translate(-20px, 12px);
+    box-shadow: 0 0 8px 2px rgb(0 0 0 / 20%);;
+    /* flex-direction: column;
+    padding: 8px 16px;
+    min-width: 180px;
+    transform: translate(-20px, 12px); */
+    
+}
+
+.more-child a:hover{
+    background-color: #f44336;
+    color: white;
+}
+
+.more-child a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+    text-transform: none;
+    min-width: 160px;
+
+}
+/* slider */
+
+.container{
+    padding-top: 46px;
+}
+
+.slider {
+    background-image: url(https://www.w3schools.com/w3images/chicago.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+
+}
+
+.slider .description{
+    position: absolute;
+    color: white;
+    bottom: 2%;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.slider .description h3{
+    margin-bottom: 30px;
+}
+
+/* content */
+
+.content{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 80px 16px;
+    text-align: center;
+}
+
+.title{
+    margin: 12px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.description{
+    margin: 24px 0;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.theband p:last-child{
+    text-align: justify;
+    margin: 12px 0;
+}
+
+.bandmemeber {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px 0;
+}
+
+.member-name{
+    margin: 18px 0;
+}
+.member-img img{
+    width: 60%;
+}
+
+
+/*tour dates*/
+.tour-dates{
+    background-color: black;
+    color: white;
+}
+
+.calendar{
+    margin: 40px 0;
+}
+
+.calendar-child{
+    display: flex;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.calendar-child .time{
+    opacity: 0.6;
+}
+
+.calendar-child .checked{
+    background-color: #f44336;
+    color: white;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+
+.calendar-child:last-child{
+    justify-content: space-between;
+}
+
+.calendar-child .number{
+    padding: 0 8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+/* tours */
+.tours{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -8px;
+}
+
+.tour{
+    width: 33.333333%;
+    background-color: white;
+    color: black;
+    text-align: initial;
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+.tour-place img{
+    width: 100%;
+}
+
+.tour-info{
+    padding: 16px;
+
+}
+
+.tour-info .description{
+    margin: 12px 0;
+}
+
+.but-ticket{
+    padding: 8px 12px ;
+    margin-top: 12px;
+    color: white;
+    background-color: black;
+}
+
+
+
+.form{
+    display: flex;
+    text-align: initial;
+    justify-content: space-between;
+    padding: 38px 0;
+
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 8px 12px;
+}
+
+.form-message{
+    margin: 8px 0 20px;
+}
+
+
+.form-message input{
+    width: 100%;
+}
+
+.contact-btn{
+    padding: 8px 12px ;
+    color: white;
+    background-color: black;
+    float: right;
+}
+
+.map{
+    background-image: url(https://www.w3schools.com/w3images/map.jpg);
+    height: 100%;
+    filter: grayscale(50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
